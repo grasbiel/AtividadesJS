@@ -1,0 +1,15 @@
+body {
+  background: black;
+}
+
+.caixa {
+  background: white;
+  font: 20pt normal;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  width: 600px;
+  height: 500px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 15%;
+}
