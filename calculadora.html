@@ -6,25 +6,10 @@
   <title>Calculadora</title>
 
   <!--Estilo-->
-  <style>
-  
-    body {
-      background: black;
-    }
+  <link type="text/css" rel="stylesheet" href="css/main.css">
 
-    .caixa {
-      background: white;
-      font: 20pt normal;
-      font-family: Verdana, Arial, Helvetica, sans-serif;
-      width: 600px;
-      height: 500px;
-      text-align: center;
-      margin: 0 auto;
-      padding: 5px;
-      border-radius: 15%;
-    }
-    
-  </style>
+  <!--Script-->
+  <script src="js/script.js"></script>
 </head>
 <body>
   <div class="caixa">
@@ -46,41 +31,7 @@
         <h1>Resultado</h1>
 
       </div>
-      <script>
-        function calculadora() {
-          var num1 = window.document.getElementById('num1')
-          var num2 = window.document.getElementById('num2')
-          var opcoes = window.document.getElementsByName('opcao')
-          var opcao;
-          
-          for (var i=0; i<opcoes.length; i++) {
-            if (opcoes[i].checked) {
-              opcao = Number(opcoes[i].value);
-            }
-          }
-
-          var res = window.document.getElementById('res')
-          var n1 = Number(num1.value)
-          var n2 = Number(num2.value)
-          
-          switch (opcao) {
-            case 1:
-              result = n1 + n2
-              res.innerText = ` ${result} `
-              break;
-
-            case 2:
-              result = n1 - n2
-              res.innerText = ` ${result} ` 
-              break;
-
-            case 3:
-              result = n1 * n2
-              res.innerHTML = `${result} `
-          }
-          
-        }
-      </script>
+      
     </form>
   </div>
 </body>
