@@ -28,6 +28,11 @@ function calculadora() {
     case 3:
       result = n1 * n2
       res.innerHTML = `${result} `
+      break;
+
+    case 4:
+      result = n1 / n2
+      res.innerHTML = ` ${result} `
+      break;
   }
-  
 }
