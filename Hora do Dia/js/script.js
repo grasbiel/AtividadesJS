@@ -3,6 +3,8 @@ var hora = new Date();
 hora = hora.getHours();
 var res = document.getElementById('res')
 var image = document.getElementById('imagem')
+var caixa1 = document.getElementById('caixa')
+
 
 
 
@@ -10,6 +12,7 @@ function mostraHoras () {
   if (hora >= 0 && hora < 5) {
     res.innerHTML = `Agora são ${hora} horas da madrugada `
     image.src= "https://i2.wp.com/media-cache-ak1.pinimg.com/736x/c8/91/c0/c891c0cae73e694394abefa8a00136ff.jpg"
+    
   }
   
   else if (hora == 5) {
@@ -24,7 +27,7 @@ function mostraHoras () {
 
   else if (hora >= 8 && hora < 12) {
     res.innerHTML = `Agora são ${hora} horas da manhã`
-    
+    document.body.style.background = '#e2cd9f'
   }
 
   else if (hora == 12) {
@@ -39,6 +42,7 @@ function mostraHoras () {
   else if (hora >= 18) {
     res.innerHTML = `Agora são ${hora} horas da noite `
     image.src = "https://images.immediate.co.uk/production/volatile/sites/25/2019/05/Light-pollution-090756f.jpg?quality=90&resize=620,413"
+    document.body.style.background = '515154'
   }
   
 }
