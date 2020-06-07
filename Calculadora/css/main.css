@@ -1,35 +1,76 @@
 body {
-  background: rgb(179, 179, 230);
+  height: 100%;
+  background: #000;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  color: #0AF539;
+  text-align: center;
+  margin-top: 50px;
+  
+}
+.botao {
+  border: none;
+  background: #000;
+  text-emphasis: none;
+  color: #0AF539;
+  width: 80px;
+  height: 80px;
+  font-size: 30px;
+  border-radius: 5%;
+  border: 1px solid #0AF539;
+  cursor: pointer;
+}
+
+.botaoop {
+  border: none;
+  background: #000;
+  text-emphasis: none;
+  color: #0AF539;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  border: 1px solid #0AF539;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+.calc {
+  width: 125px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+.op {
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+  cursor: default;
+}
+.botao:hover {
+  background: #0D9027;
   color: #ffffff;
 }
 
-.caixa {
-  background: rgb(128, 128, 255);
-  font: 20pt normal;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  width: 720px;
-  height: 520px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  border-radius: 15%;
-  
+.inputs {
+  line-height: 10pt;
+  font-size: 16pt;
+  background: #0AF539;
+  color: #ffffff;
+  height: 25px;
+  padding: 5px;
+  margin-top: 25px;
+  border-radius: 7%;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-
-.btn {
-  border-radius: 2px;
-  border: 3px solid rgb(179, 179, 230);
-  color: rgb(179, 179, 230);
-  
-  cursor: pointer;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  padding: 12px 36px;
-}
-
-.btn-hover:hover {
-  opacity: 0.7;
+.flex > div {
+  flex: 1 1 150px;
+  margin: 5px;
 }

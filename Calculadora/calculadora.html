@@ -12,27 +12,70 @@
   <script src="js/script.js"></script>
 </head>
 <body>
-  <div class="caixa">
-    <h1>Calculadora</h1>
-    <form>
-      <label for="numero1">Número 1:</label>
-      <input type="number" id="num1" name="num1"><br>
-      <label for="numero2">Número 2:</label>
-      <input type="number" id="num2" name="num2"> <br>
+  <h1>Calculadora</h1>
+  <section>
+  
 
-      
-      <input type="radio" id="1" name="opcao" value="1"> Soma
-      <input type="radio" id="2" name="opcao" value="2"> Subtracao
-      <input type="radio" id="3" name="opcao" value="3"> Multiplicação
-      <input type="radio" id="4" name="opcao" value="4"> Divisao 
-      
-      <br><button onclick="calculadora()" class="btn btn-hover">Calcular</button>
-      <div id="res">
-        <h1>Resultado</h1>
+    <div class="">
+      <div class="flex"> <!--NUMEROS-->
+        <div>
+          <button onclick="calcular('numero', 1)" type="number" class="botao" onclick="pressiona1()" id="1">1</button>
+        </div>
+        
+        <div>
+          <button onclick="calcular('numero',2)" type="number" class="botao">2</button>
+        </div>
+        
+        <div>
+          <button onclick="calcular('numero', 3) " type="number" class="botao">3</button>
+        </div>
+        
+        <div>
+          <button onclick="calcular('numero', 4) " type="number" class="botao">4</button>
+        </div>
+        <div>
+          <button onclick="calcular('numero', 5) " type="number" class="botao">5</button>
+        </div>
+        <div>
+          <button onclick="calcular('numero', 6) " type="number" class="botao">6</button>
+        </div>
+        <div>
+          <button onclick="calcular('numero', 7) " type="number" class="botao">7</button>
+        </div>
+        <div>
+          <button onclick="calcular('numero', 8) " type="number" class="botao">8</button>
+        </div>
+        <div>
+          <button onclick="calcular('numero', 9) " type="number" class="botao">9</button>
+        </div>
+        <div>
+          <button onclick="calcular('numero', 0) " type="number" class="botao">0</button>
+        </div>
 
-      </div>
+        <div>
+          
+        </div>
+      </div> <!--FIM NUMEROS-->
+
+      <div class="flex"> <!--OPERADORES-->
+        <div>
+          <button onclick="calcular('operacao', '+')" class="botaoop">+</button>
+          <button onclick="calcular('operacao', '-')" class="botaoop">-</button>
+          <button onclick="calcular('operacao', '*')" class="botaoop">*</button>
+          <button onclick="calcular('operacao', '/')" class="botaoop">/</button>
+          <button onclick="calcular('operacao', '.')" class="botaoop">.</button>
+          <button onclick="calcular('operacao', 'c') " class="botaoop">C</button>
+          <button onclick="calcular('operacao','calc')" class="botaoop calc">Calcular</button>
+        </div>
+      </div> <!--FIM OPERADORES-->
+    </div>
+
+    <div class="flex">
+      <input type="text" onselect="calcular()" id="resultado" class="inputs" placeholder="0">
       
-    </form>
-  </div>
+      
+    </div>
+  </section>
+  <script src="calc.js"></script>
 </body>
 </html>
