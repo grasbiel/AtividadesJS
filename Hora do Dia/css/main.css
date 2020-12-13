@@ -12,13 +12,13 @@ header {
 }
 header h1 {
   padding-top: 30px;
-  color : #000;
+  color : #ffffff;
   text-align: center;
 }
 
 
 
-.caixa {
+#caixa {
   background: #3D89DB;
   left: 50%;
   top: 50%;

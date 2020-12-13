@@ -39,10 +39,10 @@ function mostraHoras () {
     image.src= "https://s7d2.scene7.com/is/image/TWCNews/img_3688_jpg-2"
   }
 
-  else if (hora >= 18) {
+  else  {
     res.innerHTML = `Agora são ${hora} horas da noite `
     image.src = "https://images.immediate.co.uk/production/volatile/sites/25/2019/05/Light-pollution-090756f.jpg?quality=90&resize=620,413"
-    document.body.style.background = '515154'
+    document.body.style.background = '#2a191f'   
   }
   
 }
